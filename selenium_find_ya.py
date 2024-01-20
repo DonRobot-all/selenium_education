@@ -7,8 +7,6 @@ options_chrome.add_argument('--headless')
 options_chrome.add_extension('coordinates.crx')
 
 
-
-
 with webdriver.Chrome(options=options_chrome) as browser:
     url = 'https://yandex.ru/'
     browser.get(url)
